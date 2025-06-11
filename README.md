@@ -33,39 +33,11 @@ This helps in early detection and classification of attack types such as brute-f
 ---
 
 ## 📁 Project Structure
+
+```plaintext
 Clustering-SSH-Attacks/
-├── Data/ # Preprocessed CSVs from PCAP files
-├── src/ # Java source code
-├── wekaAnalysis/ # WEKA model files and analysis
-├── eclipse/ # Eclipse project configs (if used)
-└── README.md # You're here!
-
----
-
-## ⚙️ How It Works
-
-1. 📥 **Capture traffic** using Wireshark/tshark.
-2. 🔁 **Convert `.pcap` to `.csv`**, extracting useful features like:
-   - Packet Length
-   - Time Interval
-   - Protocol Type
-   - Source/Destination Ports
-3. 🧮 **Run KMeans in WEKA** via Java.
-4. 📊 **Analyze clusters** to find attack patterns.
-5. 🕵️ **Label behavior types** and understand traffic anomalies.
-
----
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/tunirwabhitkar/Clustering-SSH-Attacks.git
-cd Clustering-SSH-Attacks
-
-🔧 Open in Eclipse/IntelliJ
-
-📂 Add weka.jar to your project classpath
-
-▶️ Run the main class (SSHKMeansClustering.java)
-
-
+├── Data/            # Preprocessed CSVs from PCAP files
+├── src/             # Java source code
+├── wekaAnalysis/    # WEKA model files and analysis
+├── eclipse/         # Eclipse project configs (if used)
+└── README.md        # You're here!
